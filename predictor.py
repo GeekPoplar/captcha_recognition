@@ -11,7 +11,7 @@ import utils
 def analyse(stream, model) -> dict:
     """stream = open(file, 'rb').read()
     先载入保存的model, 传入model对象来进行分析, 
-    model = keras.models.load_model('../model/m.net')
+    model = keras.models.load_model(model_file)
     """
     def func(x): return x + 48 if x <= 9 else x + 87 if x <= 23 else x + 88
     # image = Image.open(BytesIO(stream))
